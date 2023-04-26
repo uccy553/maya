@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 .hero_section {
+=======
+.hero {
+    position: relative;
+    top: 4.8em;
+    height: 100vh;
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+}
+
+.hero_text {
+  width: 50%;
+>>>>>>> 1162ea8 (changes)
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
@@ -19,16 +20,44 @@ const Testimonial = () => {
   // const handleNextArrowClick = () => {
   //   sliderRef.current?.slickNext();
   // };
->>>>>>> 7a6c027 (additions)
+=======
+import React, { useRef } from 'react'
+import Slider from 'react-slick';
+import Image from 'next/image';
+import styles from '../styles/Testimonial.module.css';
+import { reviews } from '@/constants/reviews';
+
+
+const Testimonial = () => {
+    const sliderRef = useRef<Slider>(null);
+
+  const handlePrevArrowClick = () => {
+    sliderRef.current?.slickPrev();
+  };
+
+  const handleNextArrowClick = () => {
+    sliderRef.current?.slickNext();
+  };
+
+
+>>>>>>> 1162ea8 (changes)
 
     const settings = {
         dots: true,
         infinite: false,
         speed: 500,
+<<<<<<< HEAD
         slidesToShow: 3.2,
         slidesToScroll: 3,
         initialSlide: 3,
     
+=======
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 2,
+      
+        rtl: true,
+>>>>>>> 1162ea8 (changes)
         responsive: [
           {
             breakpoint: 1024,
@@ -63,6 +92,7 @@ const Testimonial = () => {
 
   return (
     <>
+<<<<<<< HEAD
       <div className={styles.slider}>
         <h1>What Customers Say About Us</h1>
 
@@ -99,3 +129,29 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+=======
+        <div className={styles.slider}>
+
+        <h1>What Customers Say About Us</h1>
+
+        <div className={styles.slide}>
+            <Slider ref={sliderRef} {...settings}>
+                {reviews.map((item) => (
+                    <div key={item.id}>
+                        <div className={styles.card}>
+                            <div className={styles.quote}>
+                                <Image src={item.image1} alt="img" />
+                                <Image src={item.image2} alt="img" />
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </Slider>
+        </div>
+        </div>
+    </>
+  )
+}
+
+export default Testimonial
+>>>>>>> 1162ea8 (changes)

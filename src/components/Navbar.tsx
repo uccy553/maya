@@ -18,11 +18,19 @@ const Navbar = () => {
     <>
       <header className={styles.header}>
         <nav className={styles.nav}>
+<<<<<<< HEAD
           <div className={styles.head_logo}>
             <Link href="/" style={{ display: "flex", zIndex: "50" }}>
               <Image src={logo} alt="logo" width={110} />
             </Link>
           </div>
+=======
+            <div className={styles.head_logo}>
+              <Link href="/" style={{ display: 'flex', zIndex: '50' }}>
+                  <Image src={logo} alt="logo" />
+              </Link>
+            </div>
+>>>>>>> 1162ea8 (changes)
 
           <div className={styles.menu} onClick={() => setNavActive(!navActive)}>
             {navActive ? (
