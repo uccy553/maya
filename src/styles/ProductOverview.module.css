@@ -24,8 +24,8 @@
 }
 
 .image {
-  width: 410px;
-  height: 410px;
+  /* width: 410px;
+  height: 410px; */
   left: 40px;
   top: 0px;
 }
@@ -151,5 +151,16 @@
     top: 35rem;
     left: 25.3rem;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .statsimg {
+    display: none;
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 1.7em;
   }
 }
