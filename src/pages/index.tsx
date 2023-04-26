@@ -3,6 +3,7 @@ import { Navbar, Hero } from "@/components";
 import styles from "@/styles/Home.module.css";
 import ProductOverview from "@/components/ProductOverview";
 import Services from "@/components/Services";
+import More from "@/components/More";
 
 export default function Home() {
   return (
@@ -14,10 +15,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <Navbar />
-        <Hero />
+        {/* <Navbar />
+        <Hero /> */}
         <ProductOverview />
         <Services />
+        <More />
       </main>
     </>
   );

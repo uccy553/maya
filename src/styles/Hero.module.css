@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   top: 4.8em;
-  height: 11 0vh;
+  height: 110vh;
   background-color: #fff;
   border-bottom: 1px solid gray;
 }
@@ -69,4 +69,48 @@
 .images > div {
   display: flex;
   gap: 2em;
+}
+
+@media screen and (max-width: 640px) {
+  .hero {
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images {
+    display: none;
+  }
+
+  .hero_text {
+    left: 0;
+    width: 100%;
+    gap: 1em;
+    align-items: center;
+  }
+
+  .hero_section {
+    padding: 1.2em;
+  }
+
+  .hero_text > h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .hero_text > p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn1 {
+    font-size: 1.2em;
+  }
+
+  .btn2 {
+    font-size: 1.2em;
+  }
 }

@@ -21,20 +21,18 @@
 }
 
 .image {
-  width: 410px;
-  height: 410px;
-  left: 40px;
-  top: 0px;
+  width: 22rem;
+  height: 22rem;
 }
 
-.statsimg {
+/* .statsimg {
   position: absolute;
   width: 10rem;
   height: 3.7rem;
   top: 22rem;
   left: 18rem;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
-}
+} */
 
 .text_div {
   padding: 3rem;
@@ -44,28 +42,20 @@
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.8rem;
+  line-height: 1rem;
   text-transform: uppercase;
   color: #5b2585;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .heading {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 35px;
-  line-height: 48px;
-  padding-right: 30px;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  /* padding-right: 1rem; */
   color: #343434;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .heading span {
@@ -76,18 +66,16 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 1.8rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
   list-style: none;
 
   display: flex;
-  align-items: center;
 
   color: #222222;
 
-  /* flex: none; */
   display: flex;
   order: 0;
   flex-grow: 0;
@@ -102,8 +90,8 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 19px;
+  font-size: 0.75rem;
+  line-height: 1.1rem;
   padding: 0.5rem 1rem;
   border-radius: 0.3rem;
   margin-top: 1rem;
@@ -122,6 +110,22 @@
   left: 0.1rem;
 }
 
+/*  Tablet */
+@media (min-width: 768px) {
+  .div {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+  }
+
+  .img_div {
+    display: flex;
+    justify-content: start;
+    padding: 3rem;
+  }
+}
+
+/* Desktop */
 @media (min-width: 1024px) {
   .div {
     display: flex;
@@ -130,16 +134,21 @@
   }
 
   .image {
-    width: 610px;
-    height: 610px;
+    width: 30rem;
+    height: 30rem;
   }
 
   .title {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
 
   .heading {
-    padding-right: 150px;
+    padding-right: 9.3rem;
+  }
+
+  .list {
+    padding-bottom: 0;
+    padding-right: 5rem;
   }
 
   .statsimg {

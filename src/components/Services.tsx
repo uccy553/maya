@@ -42,34 +42,34 @@ const Services = (props: Props) => {
               <span className={`${styles.icon_div}`}>
                 <VaccinesOutlinedIcon />
               </span>
-              <h3>Injuries & Accidents</h3>
+              <h3>Conditions & Illness</h3>
               <p>
-                When a pet is injured or involved in an accident, the cost of
-                veterinary care can be expensive, and our pet insurance can help
-                offset these costs.
+                We help provide coverage for a range of medical conditions and
+                illnesses, such as cancer, diabetes, allergies, and infections.
+                Depending on the policy.
               </p>
             </div>
             <div>
               <span className={`${styles.icon_div}`}>
                 <EventNoteOutlinedIcon />
               </span>
-              <h3>Injuries & Accidents</h3>
+              <h3>Prescriptions</h3>
 
               <p>
-                When a pet is injured or involved in an accident, the cost of
-                veterinary care can be expensive, and our pet insurance can help
-                offset these costs.
+                we help offset the costs, making it easier for pet owners to
+                provide their pets with the necessary medication to manage and
+                maintain their health
               </p>
             </div>
             <div>
               <span className={`${styles.icon_div}`}>
                 <BloodtypeIcon />
               </span>
-              <h3>Injuries & Accidents</h3>
+              <h3>Dental Work </h3>
               <p>
-                When a pet is injured or involved in an accident, the cost of
-                veterinary care can be expensive, and our pet insurance can help
-                offset these costs.
+                we help pets with dental work by covering the cost of dental
+                procedures, such as teeth cleaning, extractions, and other
+                dental surgeries.
               </p>
             </div>
           </div>
