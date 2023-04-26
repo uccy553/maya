@@ -33,22 +33,21 @@ const overviews: Array<OverviewType> = [
 const ProductOverview = () => {
   const [screenWidth, setScreenWidth] = useState(0);
 
-    useEffect(() => {
-        setScreenWidth(window.innerWidth);
-        const handleResize = () => setScreenWidth(window.innerWidth);
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-      }, []);
-
+  useEffect(() => {
+    setScreenWidth(window.innerWidth);
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <section className={`${styles.section}`}>
       <div className={`${styles.div}`}>
         <div className={`${styles.img_div}`}>
-          <Image src={dogimg} alt="" className={`${styles.image}`} width={screenWidth < 640 ? 350 : '400'} />
-          <div className={`${styles.statsimg_div}`}>
+          <Image src={dogimg} alt="" className={`${styles.image}`} />
+          {/* <div className={`${styles.statsimg_div}`}>
             <Image src={statsimg} alt="" className={`${styles.statsimg}`} />
-          </div>
+          </div> */}
         </div>
 
         <div className={`${styles.text_div}`}>
@@ -68,7 +67,10 @@ const ProductOverview = () => {
 
             <button className={`${styles.btn}`}>
               Read more{" "}
-              <Image src={pointer} alt="ponter" className={`${styles.pointer}`}
+              <Image
+                src={pointer}
+                alt="ponter"
+                className={`${styles.pointer}`}
                 width={4}
               />
             </button>
