@@ -22,7 +22,6 @@ const Navbar = () => {
             <div className={styles.head_logo}>
               <Link href="/" style={{ display: 'flex', zIndex: '50' }}>
                   <Image src={logo} alt="logo" />
-                  <h1>Maya</h1>
               </Link>
             </div>
 
