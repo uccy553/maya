@@ -3,11 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
 
 .section {
-  position: absolute;
   width: 100%;
-  /* height: 770px; */
-  left: 0px;
-  /* top: 883px; */
+
   padding-top: 4rem;
 
   background: #fdfaff;

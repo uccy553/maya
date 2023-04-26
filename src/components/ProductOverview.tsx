@@ -36,9 +36,9 @@ const ProductOverview = () => {
       <div className={`${styles.div}`}>
         <div className={`${styles.img_div}`}>
           <Image src={dogimg} alt="" className={`${styles.image}`} />
-          <div className={`${styles.statsimg_div}`}>
+          {/* <div className={`${styles.statsimg_div}`}>
             <Image src={statsimg} alt="" className={`${styles.statsimg}`} />
-          </div>
+          </div> */}
         </div>
 
         <div className={`${styles.text_div}`}>
