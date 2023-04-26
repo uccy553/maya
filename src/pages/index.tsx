@@ -1,16 +1,5 @@
 import Head from "next/head";
-<<<<<<< HEAD
-import {
-  Navbar,
-  Hero,
-  Testimonial,
-  ProductOverview,
-  Services,
-  More,
-} from "@/components";
-=======
 import { Navbar, Hero, Testimonial, ProductOverview } from "@/components";
->>>>>>> 1162ea8 (changes)
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -25,13 +14,8 @@ export default function Home() {
       <div>
         <Navbar />
         <Hero />
-<<<<<<< HEAD
-        <ProductOverview />
-        <Services />
-=======
         <p style={{ position: 'relative', top: '5em' }}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum blanditiis, libero, consectetur voluptas dolore consequatur beatae nisi sed earum vitae accusamus sint assumenda aliquam eveniet quo nostrum porro nobis! Eaque.</p>
         {/* <ProductOverview /> */}
->>>>>>> 1162ea8 (changes)
         <Testimonial />
       </div>
     </>
