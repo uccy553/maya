@@ -1,9 +1,6 @@
 import Head from "next/head";
-import { Navbar, Hero } from "@/components";
+import { Navbar, Hero, Testimonial, ProductOverview } from "@/components";
 import styles from "@/styles/Home.module.css";
-import ProductOverview from "@/components/ProductOverview";
-import Services from "@/components/Services";
-import More from "@/components/More";
 
 export default function Home() {
   return (
@@ -14,13 +11,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main}`}>
-        {/* <Navbar />
-        <Hero /> */}
-        <ProductOverview />
-        <Services />
-        <More />
-      </main>
+      <div>
+        <Navbar />
+        <Hero />
+        <p style={{ position: 'relative', top: '5em' }}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum blanditiis, libero, consectetur voluptas dolore consequatur beatae nisi sed earum vitae accusamus sint assumenda aliquam eveniet quo nostrum porro nobis! Eaque.</p>
+        {/* <ProductOverview /> */}
+        <Testimonial />
+      </div>
     </>
   );
 }
