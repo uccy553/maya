@@ -22,9 +22,9 @@ const Testimonial = () => {
         dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 3.2,
         slidesToScroll: 3,
-        initialSlide: 2,
+        initialSlide: 3,
       
         rtl: true,
         responsive: [
@@ -73,6 +73,16 @@ const Testimonial = () => {
                             <div className={styles.quote}>
                                 <Image src={item.image1} alt="img" />
                                 <Image src={item.image2} alt="img" />
+                            </div>
+
+                            <p>{item.text}</p>
+
+                            <div className={styles.name}>
+                              <Image src={item.image} alt={item.title} />
+                              <div>
+                                <span>{item.name}</span>
+                                <small>{item.title}</small>
+                              </div>
                             </div>
                         </div>
                     </div>
