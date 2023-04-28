@@ -8,13 +8,13 @@ import { reviews } from '@/constants/reviews';
 const Testimonial = () => {
     const sliderRef = useRef<Slider>(null);
 
-  const handlePrevArrowClick = () => {
-    sliderRef.current?.slickPrev();
-  };
+  // const handlePrevArrowClick = () => {
+  //   sliderRef.current?.slickPrev();
+  // };
 
-  const handleNextArrowClick = () => {
-    sliderRef.current?.slickNext();
-  };
+  // const handleNextArrowClick = () => {
+  //   sliderRef.current?.slickNext();
+  // };
 
 
 
@@ -25,8 +25,7 @@ const Testimonial = () => {
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 3,
-      
-        rtl: true,
+    
         responsive: [
           {
             breakpoint: 1024,
