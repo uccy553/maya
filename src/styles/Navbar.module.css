@@ -1,17 +1,17 @@
 .header {
   position: fixed;
   width: 100%;
-  z-index: 99;
+  top: 0;
+  left: 0;
 }
 
 .head_logo {
   margin: 5em;
-  /* z-index: 99; */
 }
 
 .nav {
   background-color: #5b2585;
-  border-bottom: 2px solid #e6e6e6;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   height: 5em;
   display: flex;
   justify-content: space-between;
@@ -19,15 +19,15 @@
 }
 
 .nav_btn {
-  height: 2.7em;
-  width: 9em;
+  font-family: "Nunito", sans-serif;
+  padding: 0.7rem 1.2rem;
   border: 1px solid #fff;
-  border-radius: 9px;
+  border-radius: 3px;
   color: #fff;
   background-color: transparent;
   cursor: pointer;
-  font-weight: 700;
-  font-size: 1.2em;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .nav_btn:hover {
@@ -50,7 +50,8 @@
 }
 
 .nav__link {
-  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
   position: relative;
   transition: all 0.2s;
   color: #fff;
@@ -88,10 +89,10 @@
     font-size: 1.5em;
     width: 100%;
     padding: 24px 16px;
-    min-height: calc(120vh - 60px);
+    min-height: calc(130vh - 60px);
     row-gap: 24px;
     transition: all 0.3s;
-    left: -800px;
+    left: -900px;
   }
 
   .nav__link {

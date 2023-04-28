@@ -3,8 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
 
 .section {
-  width: 100%;
-
   padding-top: 4rem;
 
   background: #fdfaff;
@@ -21,8 +19,8 @@
 }
 
 .image {
-  width: 22rem;
-  height: 22rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 /* .statsimg {
@@ -35,26 +33,24 @@
 } */
 
 .text_div {
-  padding: 3rem;
+  padding: 0 2rem;
 }
 
 .title {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
+
   font-weight: 600;
   font-size: 0.8rem;
-  line-height: 1rem;
+  margin-top: 4rem;
   text-transform: uppercase;
   color: #5b2585;
 }
 
 .heading {
   font-family: "Nunito", sans-serif;
-  font-style: normal;
   font-weight: 600;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  /* padding-right: 1rem; */
+  font-size: 1.5rem;
+
   color: #343434;
 }
 
@@ -63,22 +59,16 @@
 }
 
 .list {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.8rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
   list-style: none;
 
-  display: flex;
-
   color: #222222;
-
-  display: flex;
-  order: 0;
-  flex-grow: 0;
 }
 
 .list span {
@@ -87,12 +77,12 @@
 
 .btn {
   cursor: pointer;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   line-height: 1.1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 2rem;
   border-radius: 0.3rem;
   margin-top: 1rem;
 
@@ -106,8 +96,10 @@
 
 .pointer {
   position: relative;
-  top: 0.1rem;
-  left: 0.1rem;
+  top: 0.25rem;
+  left: 0.2rem;
+
+  width: 0.9rem;
 }
 
 /*  Tablet */
@@ -115,7 +107,8 @@
   .div {
     display: flex;
     flex-direction: column;
-    padding: 4rem;
+    padding: 0 4rem;
+    padding-bottom: 5rem;
   }
 
   .img_div {
