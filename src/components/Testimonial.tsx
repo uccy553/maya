@@ -8,13 +8,13 @@ import { reviews } from '@/constants/reviews';
 const Testimonial = () => {
     const sliderRef = useRef<Slider>(null);
 
-  // const handlePrevArrowClick = () => {
-  //   sliderRef.current?.slickPrev();
-  // };
+  const handlePrevArrowClick = () => {
+    sliderRef.current?.slickPrev();
+  };
 
-  // const handleNextArrowClick = () => {
-  //   sliderRef.current?.slickNext();
-  // };
+  const handleNextArrowClick = () => {
+    sliderRef.current?.slickNext();
+  };
 
 
 
@@ -22,10 +22,11 @@ const Testimonial = () => {
         dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 3.2,
+        slidesToShow: 3,
         slidesToScroll: 3,
-        initialSlide: 3,
-    
+        initialSlide: 2,
+      
+        rtl: true,
         responsive: [
           {
             breakpoint: 1024,
@@ -72,16 +73,6 @@ const Testimonial = () => {
                             <div className={styles.quote}>
                                 <Image src={item.image1} alt="img" />
                                 <Image src={item.image2} alt="img" />
-                            </div>
-
-                            <p>{item.text}</p>
-
-                            <div className={styles.name}>
-                              <Image src={item.image} alt={item.title} />
-                              <div>
-                                <span>{item.name}</span>
-                                <small>{item.title}</small>
-                              </div>
                             </div>
                         </div>
                     </div>
