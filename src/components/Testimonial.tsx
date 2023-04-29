@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-// import Slider from 'react-slick';
+import Slider from "react-slick";
 import Image from "next/image";
 import styles from "../styles/Testimonial.module.css";
 import { reviews } from "@/constants/reviews";
@@ -11,9 +11,15 @@ const Testimonial = () => {
     sliderRef.current?.slickPrev();
   };
 
+<<<<<<< HEAD
   const handleNextArrowClick = () => {
     sliderRef.current?.slickNext();
   };
+=======
+  // const handleNextArrowClick = () => {
+  //   sliderRef.current?.slickNext();
+  // };
+>>>>>>> 7a6c027 (additions)
 
   const settings = {
     dots: true,
@@ -21,9 +27,14 @@ const Testimonial = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+<<<<<<< HEAD
     initialSlide: 2,
 
     rtl: true,
+=======
+    initialSlide: 3,
+
+>>>>>>> 7a6c027 (additions)
     responsive: [
       {
         breakpoint: 1024,
@@ -68,6 +79,19 @@ const Testimonial = () => {
                     <Image src={item.image1} alt="img" />
                     <Image src={item.image2} alt="img" />
                   </div>
+<<<<<<< HEAD
+=======
+
+                  <p>{item.text}</p>
+
+                  <div className={styles.name}>
+                    <Image src={item.image} alt={item.title} />
+                    <div>
+                      <span>{item.name}</span>
+                      <small>{item.title}</small>
+                    </div>
+                  </div>
+>>>>>>> 7a6c027 (additions)
                 </div>
               </div>
             ))}
