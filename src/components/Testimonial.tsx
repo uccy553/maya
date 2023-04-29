@@ -21,49 +21,45 @@ const Testimonial = () => {
   // };
 >>>>>>> 7a6c027 (additions)
 
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-<<<<<<< HEAD
-    initialSlide: 2,
-
-    rtl: true,
-=======
-    initialSlide: 3,
-
->>>>>>> 7a6c027 (additions)
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1.5,
-          slidesToScroll: 2.5,
-          infinite: false,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          innerWidth: 900,
-          initialSlide: 0,
-        },
-      },
-    ],
-  };
+    const settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3.2,
+        slidesToScroll: 3,
+        initialSlide: 3,
+    
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1.5,
+              slidesToScroll: 2.5,
+              infinite: false,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              initialSlide: 1
+            }
+          },                                
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              innerWidth: 900,
+              initialSlide: 0,
+              
+            }
+          }
+        ]
+        
+      };
 
   return (
     <>
