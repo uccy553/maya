@@ -1,6 +1,7 @@
 import Head from "next/head";
-import { Navbar, Hero, Testimonial, ProductOverview, Services, More } from "@/components";
-import styles from "@/styles/Home.module.css";
+import { Navbar, Hero, Testimonial, ProductOverview } from "@/components";
+
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <Hero />
         <ProductOverview />
         <Services />
-        <Testimonial />
+        {/* <Testimonial /> */}
       </div>
     </>
   );

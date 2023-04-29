@@ -31,15 +31,6 @@ const overviews: Array<OverviewType> = [
 ];
 
 const ProductOverview = () => {
-  // const [screenWidth, setScreenWidth] = useState(0);
-
-  // useEffect(() => {
-  //   setScreenWidth(window.innerWidth);
-  //   const handleResize = () => setScreenWidth(window.innerWidth);
-  //   window.addEventListener("resize", handleResize);
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
-
   return (
     <section className={`${styles.section}`}>
       <div className={`${styles.div}`}>
@@ -71,7 +62,6 @@ const ProductOverview = () => {
                 src={pointer}
                 alt="ponter"
                 className={`${styles.pointer}`}
-                width={4}
               />
             </button>
           </div>
