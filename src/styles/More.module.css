@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfaff;
+  padding: 3rem 0;
+}
+
+.text_div {
+  padding: 0 2rem;
+  color: #343434;
+}
+
+.text_div h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 48px;
+
+  line-height: 2.3rem;
+}
+
+.text_div p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text_list p {
+  background-color: #fff;
+  cursor: pointer;
+
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #545454;
+}
+
+.text_list p:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  color: #5b2585;
+  font-weight: 700;
+}
+
+.text_list p > span {
+  padding-top: 0.5rem;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  background-color: #fdfaff;
+  color: #5b2585;
+  border: 1px solid #5b2585;
+}
+
+.img_div {
+  position: relative;
+  padding-top: 6rem;
+  display: flex;
+}
+
+.img {
+  z-index: 1;
+  width: 20rem;
+  height: 20rem;
+}
+
+.img_dot {
+  position: absolute;
+  right: 16rem;
+  top: 4rem;
+}
+
+.img_rates {
+  position: absolute;
+  z-index: 2;
+  width: 8rem;
+  height: 3.5rem;
+  top: 9rem;
+  left: -2rem;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 7rem 7rem;
+  }
+
+  .text_div h3 {
+    padding-right: 5rem;
+    font-size: 2.3rem;
+  }
+
+  .img_div {
+    position: relative;
+    padding-top: 6rem;
+    display: flex;
+  }
+
+  .img {
+    z-index: 1;
+    width: 30rem;
+    height: 30rem;
+    padding-left: 8rem;
+  }
+
+  .img_dot {
+    position: absolute;
+    right: 21rem;
+    top: 4.5rem;
+  }
+
+  .img_rates {
+    position: absolute;
+    z-index: 2;
+    width: 15rem;
+    height: 5rem;
+    top: 11rem;
+    left: 2rem;
+  }
+}

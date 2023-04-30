@@ -7,7 +7,9 @@ import {
   Services,
   More,
 } from "@/components";
-import styles from "@/styles/Home.module.css";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   return (
@@ -23,6 +25,7 @@ export default function Home() {
         <Hero />
         <ProductOverview />
         <Services />
+        <More />
         <Testimonial />
       </div>
     </>

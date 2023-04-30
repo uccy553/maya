@@ -1,46 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+
 .slider {
-  padding: 4em;
+  font-family: "Raleway", sans-serif;
+  padding: 3rem 0;
 }
 .slider h1 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 2em;
+  padding: 0 2rem;
 }
 
 .card {
-  width: 25em;
+  width: 20rem;
   height: fit-content;
   margin: 0 auto;
-  padding: 1.5em;
+  padding: 1rem 1.3rem;
   background-color: #fff;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   border-radius: 10px;
-  margin-bottom: 1em;
+
+  margin-bottom: 1rem;
 }
 
-.name {
-  display: flex;
-  gap: 1em;
-  margin-top: 1.5em;
-}
-
-.name div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.quote {
+.card .quote {
   display: flex;
   justify-content: space-between;
   padding: 0.6em;
 }
 
-@media screen and (max-width: 640px) {
-  .card {
-    width: fit-content;
-  }
+.quote_img1 {
+  width: 1.5rem;
+  height: 0.9rem;
+}
+.quote_img2 {
+  width: 7rem;
+  height: 0.9rem;
+}
 
-  .card p {
-    line-height: 1em;
-  }
+.card p {
+  font-size: 0.65rem;
+  line-height: 1.3rem;
+}
+
+.profile {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.profile div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile div > span {
+  font-weight: 700;
 }

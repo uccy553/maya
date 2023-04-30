@@ -7,29 +7,20 @@ import { reviews } from "@/constants/reviews";
 const Testimonial = () => {
   const sliderRef = useRef<Slider>(null);
 
-  // const handlePrevArrowClick = () => {
-  //   sliderRef.current?.slickPrev();
-  // };
-
-  // const handleNextArrowClick = () => {
-  //   sliderRef.current?.slickNext();
-  // };
-
-  const settings = {
+  var settings = {
     dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-    initialSlide: 3,
-
+    initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1.5,
-          slidesToScroll: 2.5,
-          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
           dots: true,
         },
       },
@@ -46,8 +37,6 @@ const Testimonial = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          innerWidth: 900,
-          initialSlide: 0,
         },
       },
     ],
@@ -58,19 +47,28 @@ const Testimonial = () => {
       <div className={styles.slider}>
         <h1>What Customers Say About Us</h1>
 
-        <div className={styles.slide}>
+        <div className={styles.slider}>
           <Slider ref={sliderRef} {...settings}>
             {reviews.map((item) => (
               <div key={item.id}>
                 <div className={styles.card}>
                   <div className={styles.quote}>
-                    <Image src={item.image1} alt="img" />
-                    <Image src={item.image2} alt="img" />
+                    <Image
+                      src={item.image1}
+                      alt="img"
+                      className={styles.quote_img1}
+                    />
+
+                    <Image
+                      src={item.image2}
+                      alt="img"
+                      className={styles.quote_img2}
+                    />
                   </div>
 
                   <p>{item.text}</p>
 
-                  <div className={styles.name}>
+                  <div className={styles.profile}>
                     <Image src={item.image} alt={item.title} />
                     <div>
                       <span>{item.name}</span>

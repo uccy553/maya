@@ -4,7 +4,6 @@
 
 .section {
   width: 100%;
-
 }
 
 .div {
@@ -64,6 +63,7 @@
   padding: 0.5rem 1rem;
   border-radius: 0.3rem;
   margin-top: 1rem;
+  background-color: #fff;
 
   color: #5b2585;
 

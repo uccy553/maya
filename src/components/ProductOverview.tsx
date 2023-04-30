@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import styles from "../styles/ProductOverview.module.css";
 import Image from "next/image";
 import dogimg from "../../public/PO_dog.png";
@@ -48,12 +47,12 @@ const ProductOverview = () => {
           </h3>
           <div>
             {overviews.map((item: OverviewType, index) => (
-              <ul className={`${styles.list}`}>
-                <li>
+              <div className={`${styles.list}`}>
+                <p>
                   <span>{item.id}.</span>
                   {item.details}
-                </li>
-              </ul>
+                </p>
+              </div>
             ))}
 
             <button className={`${styles.btn}`}>
