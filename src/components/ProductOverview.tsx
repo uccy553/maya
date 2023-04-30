@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import styles from "../styles/ProductOverview.module.css";
 import Image from "next/image";
 import dogimg from "../../public/PO_dog.png";
@@ -31,15 +30,6 @@ const overviews: Array<OverviewType> = [
 ];
 
 const ProductOverview = () => {
-  // const [screenWidth, setScreenWidth] = useState(0);
-
-  // useEffect(() => {
-  //   setScreenWidth(window.innerWidth);
-  //   const handleResize = () => setScreenWidth(window.innerWidth);
-  //   window.addEventListener("resize", handleResize);
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
-
   return (
     <section className={`${styles.section}`}>
       <div className={`${styles.div}`}>
@@ -57,12 +47,12 @@ const ProductOverview = () => {
           </h3>
           <div>
             {overviews.map((item: OverviewType, index) => (
-              <ul className={`${styles.list}`}>
-                <li>
+              <div className={`${styles.list}`}>
+                <p>
                   <span>{item.id}.</span>
                   {item.details}
-                </li>
-              </ul>
+                </p>
+              </div>
             ))}
 
             <button className={`${styles.btn}`}>
@@ -71,7 +61,6 @@ const ProductOverview = () => {
                 src={pointer}
                 alt="ponter"
                 className={`${styles.pointer}`}
-                width={4}
               />
             </button>
           </div>

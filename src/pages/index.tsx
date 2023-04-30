@@ -1,6 +1,15 @@
 import Head from "next/head";
-import { Navbar, Hero, Testimonial, ProductOverview, Services, More } from "@/components";
-import styles from "@/styles/Home.module.css";
+import {
+  Navbar,
+  Hero,
+  Testimonial,
+  ProductOverview,
+  Services,
+  More,
+} from "@/components";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   return (
@@ -14,9 +23,9 @@ export default function Home() {
       <div>
         <Navbar />
         <Hero />
-        {/* <p style={{ position: 'relative', top: '5em' }}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum blanditiis, libero, consectetur voluptas dolore consequatur beatae nisi sed earum vitae accusamus sint assumenda aliquam eveniet quo nostrum porro nobis! Eaque.</p> */}
         <ProductOverview />
         <Services />
+        <More />
         <Testimonial />
       </div>
     </>
